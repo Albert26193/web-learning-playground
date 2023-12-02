@@ -1,0 +1,20 @@
+---
+import Card from "../../components/Card.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="/React/Demo/demo"
+				title="React"
+				body="This is React Demo playground"
+			/>
+		</ul>
+	</main>
+</Layout>
+
+<style>
+@import url('/src/styles/RouteStyle.css');
+</style>
