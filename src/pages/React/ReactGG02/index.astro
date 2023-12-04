@@ -1,0 +1,20 @@
+---
+import LayoutReact from '../../../layouts/LayoutReact.astro';
+
+import ChildrenProps from './children-props/index';
+import FunctionProps from './function-props/index';
+import ObjectProps from './object-props/index';
+import StringProps from './string-props/index';
+---
+
+<LayoutReact title="React playground">
+  <div class="h-[40rem]">
+    <ChildrenProps client:load />
+    <div class="h-1 w-full bg-blue-600"></div>
+    <FunctionProps client:load />
+    <div class="h-1 w-full bg-blue-600"></div>
+    <ObjectProps client:load />
+    <div class="h-1 w-full bg-blue-600"></div>
+    <StringProps client:load />
+  </div>
+</LayoutReact>;
