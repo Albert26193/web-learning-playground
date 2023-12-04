@@ -1,0 +1,26 @@
+---
+import LayoutReact from '../../../layouts/LayoutReact.astro';
+
+import AdjacentElement from './adjacent-elements/index';
+import BadgeVariables from './badge-variables/script';
+import Conditional from './conditional-rendering/index';
+import RenderingList from './rendering-lists/index';
+import RenderingListNoKeys from './rendering-lists-no-keys/index';
+import DynamicDate from './dynamic-date/script';
+---
+
+<LayoutReact title="React playground">
+  <div>
+    <AdjacentElement client:load />
+    <div class="h-1 w-96 bg-blue-600"></div>
+    <BadgeVariables client:load />
+    <div class="h-1 w-96 bg-blue-600"></div>
+    <Conditional client:load />
+    <div class="h-1 w-96 bg-blue-600"></div>
+    <DynamicDate client:load />
+    <div class="h-1 w-96 bg-blue-600"></div>
+    <RenderingList client:load />
+    <div class="h-1 w-96 bg-blue-600"></div>
+    <RenderingListNoKeys client:load />
+  </div>
+</LayoutReact>

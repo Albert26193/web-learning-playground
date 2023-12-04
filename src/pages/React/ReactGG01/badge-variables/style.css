@@ -1,0 +1,26 @@
+img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+h4 {
+  margin: 5px;
+}
+
+p {
+  margin: 5px;
+}
+
+.badge {
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid var(--beige-10);
+  border-radius: 8px;
+  background-color: var(--charcoal);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
