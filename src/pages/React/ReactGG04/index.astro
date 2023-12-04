@@ -1,0 +1,29 @@
+---
+import LayoutReact from '../../../layouts/LayoutReact.astro';
+import Counter from './counter/index';
+import FormBuilder from './form-builder/index';
+import LightSwitch from './light-switch/index';
+import LightSwitchConcise from './light-switch-concise/index';
+import MultiStepForm from './multistep-form/index';
+import PasswordToggle from './password-toggle/index';
+import SmartCharacterLimit from './smart-character-limit/index';
+---
+
+<LayoutReact title="React playground">
+  <div class="w-[40rem]">
+    <Counter client:load />
+    <div class="h-1 w-full bg-slate-800 mt-8"></div>
+    <FormBuilder client:load />
+    <div class="h-1 w-full bg-slate-800 mt-8"></div>
+    <LightSwitch client:load />
+    <div class="h-1 w-full bg-slate-800 mt-8"></div>
+    <LightSwitchConcise client:load />
+    <div class="h-1 w-full bg-slate-800 mt-8"></div>
+    <MultiStepForm client:load />
+    <div class="h-1 w-full bg-slate-800 mt-8"></div>
+    <PasswordToggle client:load />
+    <div class="h-1 w-full bg-slate-800 mt-8"></div>
+    <SmartCharacterLimit client:load />
+  </div>
+</LayoutReact>;
+
