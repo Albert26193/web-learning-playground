@@ -1,26 +1,28 @@
 ---
-import Card from "../../components/Card.astro";
-import Layout from "../../layouts/Layout.astro";
+import Card from '../../components/Card.astro';
+import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="/Vue/Demo/demo"
-				title="Vue Demo"
-				body="This is Vue Demo playground"
-			/>
-			<Card
-				href="/Vue/Demo/demo"
-				title="Vue Demo2"
-				body="This is Vue Demo playground"
-			/>
-		</ul>
-	</main>
+  <main>
+    <ul
+      role="list"
+      class="link-card-grid"
+    >
+      <Card
+        href="/Vue/Demo/demo"
+        title="Vue Demo"
+        body="This is Vue Demo playground"
+      />
+      <Card
+        href="/Vue/TestSlot"
+        title="Vue Slot"
+        body="learn Vue Slot"
+      />
+    </ul>
+  </main>
 </Layout>
 
 <style>
-@import url('/src/styles/RouteStyle.css');
+  @import url('/src/styles/RouteStyle.css');
 </style>
-

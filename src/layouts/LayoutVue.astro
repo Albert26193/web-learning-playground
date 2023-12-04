@@ -30,7 +30,24 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <slot />
+    <div class="flex">
+      <div class="font-bold w-64 bg-blue-600 text-slate-50 mt-4 ml-8 rounded-full text-center h-8">
+        <a href="/">
+          <button class="mt-1"> back to router page</button>
+        </a>
+      </div>
+      <div
+        class="font-bold w-64 bg-yellow-500 text-slate-800 mt-4 ml-8 rounded-full text-center h-8"
+      >
+        <a href="/Vue/VueRouter">
+          <button class="mt-1"> back to vue router page</button>
+        </a>
+      </div>
+    </div>
+    <div class="w-full border-b-2 border-blue-800 mt-2"></div>
+    <div class="mt-8 mx-auto flex justify-center">
+      <slot />
+    </div>
   </body>
 </html>
 <style is:global>
@@ -47,7 +64,6 @@ const { title } = Astro.props;
   }
   html {
     font-family: system-ui, sans-serif;
-    background: #13151a;
     background-size: 224px;
   }
   code {
