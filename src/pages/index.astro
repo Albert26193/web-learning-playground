@@ -4,26 +4,34 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1 class="mt-8">Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			Welcome to my frontend playground. This is a place where I can test new technologies and ideas.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="/React/ReactRouter"
-				title="React"
-				body="This is React playground."
-			/>
-			<Card
-				href="/Vue/VueRouter"
-				title="Vue"
-				body="This is Vue playground."
-			/>
-		</ul>
-	</main>
+  <main>
+    <h1 class="mt-8"><span class="text-gradient"> Learning Playground</span></h1>
+    <p class="instructions">
+      This is a playground for learning different web technologies. Such as Vue or React.
+    </p>
+    <ul
+      role="list"
+      class="link-card-grid"
+    >
+      <Card
+        href="/React/ReactRouter"
+        title="React"
+        body="This is React playground."
+      />
+      <Card
+        href="/Vue/VueRouter"
+        title="Vue"
+        body="This is Vue playground."
+      />
+      <Card
+        href="/Vanilla/VanillaRouter"
+        title="Vanilla"
+        body="This is Vanilla.JS playground."
+      />
+    </ul>
+  </main>
 </Layout>
 
 <style>
-@import url('/src/styles/RouteStyle.css');
+  @import url('/src/styles/RouteStyle.css');
 </style>

@@ -1,5 +1,8 @@
 ---
 import { DemoReact } from './demo';
+import LayoutReact from '../../../layouts/LayoutReact.astro';
 ---
 
-<DemoReact client:load />
+<LayoutReact title="react demo">
+  <DemoReact client:load />
+</LayoutReact>
