@@ -1,24 +1,18 @@
 ---
+import { getFrameworkRouter } from '../../utils/GetRouter';
+
 import Card from '../../components/Card.astro';
 import Layout from '../../layouts/Layout.astro';
+const routes = getFrameworkRouter('Vue');
 ---
 
-<Layout title="Welcome to Vue.">
+<Layout title="Welcome to React.">
   <main>
     <ul
       role="list"
       class="link-card-grid"
     >
-      <Card
-        href="/Vue/Demo/demo"
-        title="Vue Demo"
-        body="This is Vue Demo playground"
-      />
-      <Card
-        href="/Vue/TestSlot"
-        title="Vue Slot"
-        body="learn Vue Slot"
-      />
+      {routes.map((route) => <Card {...route} />)}
     </ul>
   </main>
 </Layout>

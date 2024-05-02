@@ -1,8 +1,11 @@
 ---
 import Demo from './demo.html';
-import LayoutVanilla from '../../../layouts/LayoutVanilla.astro';
+import LayoutVanilla from '../../../layouts/LayoutRouter.astro';
 ---
 
-<LayoutVanilla title="React playground">
+<LayoutVanilla
+  title="React playground"
+  framework="Vanilla"
+>
   <Demo client:load />
 </LayoutVanilla>

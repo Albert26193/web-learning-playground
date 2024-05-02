@@ -1,19 +1,18 @@
 ---
+import { getFrameworkRouter } from '../../utils/GetRouter';
+
 import Card from '../../components/Card.astro';
 import Layout from '../../layouts/Layout.astro';
+const routes = getFrameworkRouter('Vanilla');
 ---
 
-<Layout title="Welcome to Vanilla.">
+<Layout title="Welcome to React.">
   <main>
     <ul
       role="list"
       class="link-card-grid"
     >
-      <Card
-        href="/Vanilla/Demo"
-        title="Demo"
-        body="Learn Vanilla JS"
-      />
+      {routes.map((route) => <Card {...route} />)}
     </ul>
   </main>
 </Layout>

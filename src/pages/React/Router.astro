@@ -1,6 +1,9 @@
 ---
+import { getFrameworkRouter } from '../../utils/GetRouter';
+
 import Card from '../../components/Card.astro';
 import Layout from '../../layouts/Layout.astro';
+const routes = getFrameworkRouter('React');
 ---
 
 <Layout title="Welcome to React.">
@@ -9,16 +12,7 @@ import Layout from '../../layouts/Layout.astro';
       role="list"
       class="link-card-grid"
     >
-      <Card
-        href="/React/Demo/demo"
-        title="React Demo"
-        body="This is React Demo playground"
-      />
-      <Card
-        href="/React/ReactOfficalToe"
-        title="React Offical"
-        body="This is React offical tutorial"
-      />
+      {routes.map((route) => <Card {...route} />)}
     </ul>
   </main>
 </Layout>

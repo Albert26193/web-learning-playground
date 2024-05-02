@@ -4,4 +4,7 @@
     "jsx": "preserve",
     "jsxImportSource": "react"
   },
+  "include": [
+    "src/**/*"
+  ]
 }
