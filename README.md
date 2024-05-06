@@ -60,15 +60,15 @@ Inside of this project, you'll see the following folders and files: 🚀
 ├── index.astro
 ├── React
 │   ├── Demo
-│   ├── ReactOfficalToe
-│   └── ReactRouter.astro   # React Router
+│   ├── Game
+│   └── Router.astro   # React Router
 ├── Vanilla
 │   ├── Demo
-│   └── VanillaRouter.astro # Vanilla Router
+│   └── Router.astro  # Vanilla Router
 └── Vue
     ├── Demo
     ├── TestSlot
-    └── VueRouter.astro     # Vue Router
+    └── Router.astro     # Vue Router
 ```
 
 ## Usage
