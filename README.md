@@ -75,17 +75,16 @@ Inside of this project, you'll see the following folders and files: 🚀
 
 - For example, I want to create a React learning demo, which named `demo`.
 - **step1:** add a new dir named `Demo` in `/src/pages/React/`.
-- **step2:** add a new file named `demo.tsx` in `/src/pages/React/NewStudy/` (the `tsx` is the file extension of React), then write your React code in `demo.tsx`.
-- **step3:** add a new Astro file Named `demo.astro`, which offers a route. The content of `demo.astro` is as follows:
-- **step4**: change your `ReactRouter.astro` file to add a new route for `demo`.
+- **step2:** add a new file named `[your file name].tsx` in `/src/pages/React/Demo/` (the `tsx` is the file extension of React), then write your React code in `[your file name].tsx`.
+- **step3:** add a new Astro file Named `index.astro`, which offers a route. The content of `index.astro` is as follows:
 
 ```tsx
 ---
-import { DemoReact } from './demo';
+import { DemoReact } from '[your file name]';
 import LayoutReact from '../../../layouts/LayoutReact.astro';
 ---
 
-<LayoutReact title="react demo">
+<LayoutReact title="react demo" framework="React">
   <DemoReact client:load />
 </LayoutReact>
 ```
@@ -97,10 +96,10 @@ import LayoutReact from '../../../layouts/LayoutReact.astro';
 ```text
 # /src/pages/React
 ├── Demo
-│   ├── demo.astro
-│   └── demo.tsx
+│   ├── index.astro
+│   └── [your file name].tsx
 ├── ...
-└── ReactRouter.astro
+└── Router.astro
 ```
 
 ## Commands
